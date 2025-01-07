@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker & Apache - Ambiente de Desenvolvimento</title>
+    <!-- Adicionando variáveis CSS globais primeiro -->
+    <style>
+        :root {
+            --docker-blue: #099CEC;
+            --docker-dark: #0B214A;
+            --white: #ffffff;
+        }
+    </style>
+    <!-- Alterando ordem dos arquivos CSS -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/components.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    
+    <header id="main-header"></header>
+
+    <main>
+        <section class="hero">
+            <h1>Docker + Apache</h1>
+            <p class="typing-text">Ambiente de desenvolvimento simplificado</p>
+            <div class="docker-animation"></div>
+        </section>
+
+        <section id="features" class="features"></section>
+    </main>
+
+    <footer id="main-footer"></footer>
+
+    <script src="./assets/scripts/main.js" type="module"></script>
+    <script src="./assets/scripts/animations.js"></script>
+    <script src="./assets/scripts/docker-integration.js"></script>
+    <script src="./components/header.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/docker-features.js"></script>
+</body>
+</html>

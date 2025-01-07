@@ -1,0 +1,48 @@
+:root {
+    --docker-blue: #099CEC;
+    --docker-dark: #0B214A;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--docker-dark);
+    color: var(--white);
+    padding-top: 80px; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    height: 100vh;
+    padding-top: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--docker-blue);
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    border-right: 2px solid var(--docker-blue);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
